@@ -1,0 +1,91 @@
+.vending {
+  box-shadow: 5px 5px 5px 5px rgba(103, 14, 125, 0.3);
+  background-color: rgba(0, 0, 255, 0.05);
+  height: 400px;
+  padding: 6px;
+
+  grid-area: vending;
+}
+
+.vending__display {
+  align-content: space-around;
+  background: linear-gradient(#0067b3, rgba(103, 14, 125, 1));
+  background-repeat: no-repeat;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(4, minmax(60px, 124px));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  height: 90%;
+  justify-content: space-around;
+  overflow: auto;
+  padding: 12px;
+  border: none;
+}
+
+.vending__display > button {
+  font-size: 1rem;
+  padding: 6px;
+  word-wrap: break-word;
+  min-height: 80px;
+  box-shadow: 0 0 15px 6px rgba(103, 14, 125, 0.6);
+  color: var(--primary-color);
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+}
+
+.vending__display-amount {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vending__display-price {
+  border-top: 1px solid rgb(95, 36, 159);
+  grid-row: 2;
+}
+
+.vending__display > button:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.vending__dispenser {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.vending__dispenser > button {
+  align-items: center;
+  background-color: transparent;
+  border-color: var(--primary-color);
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: transparent 0px 0px 0px 2px;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.025em;
+  overflow: hidden;
+  padding: 0.5rem calc(8px + 0.5rem);
+  white-space: nowrap;
+}
+
+.vending__dispenser > button:hover {
+  background-color: var(--primary-color);
+  color: rgb(255, 255, 255);
+}
+
+.vending__dispenser > span {
+  color: var(--primary-color);
+}

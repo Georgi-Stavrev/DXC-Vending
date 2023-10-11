@@ -1,0 +1,80 @@
+/* Color Variables */
+:root {
+  --primary-color: rgb(95, 36, 159);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Grid */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+}
+.col-2 {
+  flex-basis: 16.66%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+.col-4 {
+  flex-basis: 33.33%;
+}
+.col-5 {
+  flex-basis: 41.66%;
+}
+.col-6 {
+  flex-basis: 50%;
+}
+.col-7 {
+  flex-basis: 58.33%;
+}
+.col-8 {
+  flex-basis: 66.66%;
+}
+.col-9 {
+  flex-basis: 75%;
+}
+.col-10 {
+  flex-basis: 83.33%;
+}
+.col-11 {
+  flex-basis: 91.66%;
+}
+.col-12 {
+  flex-basis: 100%;
+}
+
+/* CSS */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}

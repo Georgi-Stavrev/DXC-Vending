@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(64px, 1fr) minmax(64px, 2fr);
+  grid-gap: 24px 0;
+  grid-template-areas:
+    "header header"
+    "wallet wallet"
+    "selection selection"
+    "vending vending";
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    grid-gap: 24px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "wallet vending"
+      "selection vending";
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  align-items: center;
+  display: flex;
+  height: 84px;
+  justify-content: center;
+  flex-direction: column;
+  font-size: small;
+
+  grid-area: header;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  position: relative;
+  padding-bottom: 4px;
+  color: var(--primary-color);
+}
+
+.header h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: var(--primary-color);
+}
+
+.header h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: var(--primary-color);
+}
+
+.header__tagline {
+  font-style: italic;
+  font-size: 1rem;
+}

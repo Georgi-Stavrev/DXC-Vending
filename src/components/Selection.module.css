@@ -1,0 +1,27 @@
+.selection {
+    background-color: rgba(0, 0, 255, 0.05);
+    box-shadow: 5px 5px 5px 5px rgba(103, 14, 125, 0.3);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    grid-area: selection;
+    min-height: 64px;
+    padding: 6px;
+}
+
+.selection__item {
+  height: 40px;
+}
+
+.selection__payment {
+  margin-bottom: auto;
+}
+
+.selection__cost {
+  margin-left: auto;
+}
+
+.selection__button {
+  margin: 6px 0 0 auto;
+}
